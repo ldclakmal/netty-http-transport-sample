@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>lk.avix</groupId>
-    <artifactId>netty-sample</artifactId>
+    <artifactId>netty-http-transport-sample</artifactId>
     <packaging>jar</packaging>
     <name>Netty HTTP Echo Service</name>
     <version>1.0</version>
