@@ -8,10 +8,10 @@
     <artifactId>netty-sample</artifactId>
     <packaging>jar</packaging>
     <name>Netty HTTP Echo Service</name>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <build>
-        <finalName>netty-sample</finalName>
+        <finalName>netty-http-echo-service</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
