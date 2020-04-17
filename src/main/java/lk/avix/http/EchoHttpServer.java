@@ -58,10 +58,10 @@ public final class EchoHttpServer {
     @Parameter(names = "--worker-threads", description = "Worker Threads")
     private int workerThreads = NettyRuntime.availableProcessors() * 2;
 
-    @Parameter(names = "--http2", description = "Use HTTP/2 protocol instead of HTTP/1.1")
+    @Parameter(names = "--http2", description = "Use HTTP/2 protocol instead of HTTP/1.1", arity = 1)
     private boolean http2 = false;
 
-    @Parameter(names = "--ssl", description = "Enable SSL")
+    @Parameter(names = "--ssl", description = "Enable SSL", arity = 1)
     private boolean ssl = false;
 
     @Parameter(names = "--key-store-file", validateValueWith = KeyStoreFileValidator.class,
@@ -77,7 +77,7 @@ public final class EchoHttpServer {
     @Parameter(names = {"-h", "--help"}, description = "Display Help", help = true)
     private boolean help = false;
 
-    @Parameter(names = "--h2-content-aggregate", description = "Enable HTTP/2 content aggregation")
+    @Parameter(names = "--h2-content-aggregate", description = "Enable HTTP/2 content aggregation", arity = 1)
     private boolean h2ContentAggregate = true;
 
     public static void main(String[] args) throws Exception {
